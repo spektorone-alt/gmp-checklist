@@ -887,7 +887,7 @@ async function refreshHistory(){
 }
 
 const STATE_HEBREW = {'':'', ok:'תקין', fail:'לא תקין', na:'לא רלוונטי'};
-const DRIVE_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxMtN5oJEj_3fArTRtlfnx_UfOaP6NP9WNzXKvB5D8a05LcXS73zUh7E6ik81_mhEfbLw/exec";
+const DRIVE_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxcclnw1-8haLbepKYHmfu7OdWU6HWdsF-wSAWh6NcpfrLTRLhpB16bS5NqUsyueByD-Q/exec";
 
 function buildWorkbook(){
   const dateKey = currentDateKey();
@@ -1001,7 +1001,7 @@ async function saveToDrive(){
       base64: base64,
       mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
       filename: fileName,
-      folderId: '1YrlQuIPnN361K3I_7NZ5GRiCp5mNRD8X'
+      folderId: '18DVRRiMVruWLs1lQnT0XOaNcs0QeSX8s'
     });
     await fetch(DRIVE_WEBHOOK_URL, {
       method: 'POST',
